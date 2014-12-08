@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 1</title>
+	<script>
+	var x = [3,5,'Dojo','rocks',{name:'Michael',title:'Sensei'}];
+	x.push(100);
+	x.push([1,2,3,4,5])
+
+	for(var ctr = 0; ctr < x.length; ctr++)
+	{
+		var details = '"' + x[ctr] + '" : "' + typeof(x[ctr]) + '"';
+		console.log(details);
+	}
+
+	var sum = 0;
+	for(var num_ctr = 1; num_ctr <= 500; num_ctr++)
+	{
+		var sum = sum + num_ctr; 
+	}
+	console.log("sum of 1 to 500: " + sum);
+
+	var sum2 = 0;
+	var start = new Date().getTime();
+	for(var num_ctr2 = 1; num_ctr2 <= 1000000; num_ctr2++)
+	{
+		var sum2 = sum2 + num_ctr2; 
+	}
+	var end = new Date().getTime();
+	console.log("sum of 1 to 1000000: " + sum2);
+	var diff = end - start;
+	console.log(diff + " milliseconds");
+
+	</script>
+</head>
+<body>
+	yeah!
+
+</body>
+</html>
